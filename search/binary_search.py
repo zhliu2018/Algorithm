@@ -1,6 +1,7 @@
 # @Time    : 20190704
 # @Author  : lzh
 
+
 def binary_search(nums, target):
     left = 0
     right = len(nums) - 1
@@ -13,6 +14,7 @@ def binary_search(nums, target):
         else:
             return mid
     return -1
+
 
 # 递归实现
 def binary_serach(nums, target):
