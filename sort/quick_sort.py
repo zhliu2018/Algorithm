@@ -8,7 +8,7 @@ def quick_sort(nums):
 
 def quick_sort_helper(nums, low, high):
     if low < high:
-        pivot = partition(nums, low, high)
+        pivot = partition1(nums, low, high)
         quick_sort_helper(nums, low, pivot-1)
         quick_sort_helper(nums, pivot+1, high)
     return nums
@@ -33,7 +33,7 @@ def partition1(nums, low, high):
     i = index
     while i <= high:
         if nums[i] < nums[pivot]:
-            nums[index], nums[pivot] = nums[pivot], nums[index]
+            nums[index], nums[i] = nums[i], nums[index]
             index += 1
         i += 1
     nums[pivot], nums[index-1] = nums[index-1], nums[pivot]
