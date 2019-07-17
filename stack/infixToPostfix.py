@@ -12,9 +12,7 @@
 4. When the input expression has been completely processed, check the opstack. Any operators still on the stack can
     be removed and appended to the end of the output list.
 '''
-
-from stack.Stack import Stack
-
+from Stack import Stack
 
 def infixToPostfix(infixexpr):
     prec = {}
